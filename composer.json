@@ -1,0 +1,46 @@
+{
+    "name": "bencavens/instagram",
+    "description": "wrapper for Instagram v2 api",
+    "keywords": [
+        "instagram",
+        "oauth"
+    ],
+    "homepage": "https://github.com/bencavens/instagram",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Cavens",
+            "email": "cavensben@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.9",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "mockery/mockery" : "~0.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bencavens\\Instagram\\": "src/"
+        },
+        "classmap":[]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bencavens\\Instagram\\Tests\\": "tests"
+        },
+        "classmap":[]
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
